@@ -1,0 +1,31 @@
+{
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "revision" : "354dda32d89fc8cd4f5c46487f64957d355f53d8",
+        "version" : "5.6.1"
+      }
+    },
+    {
+      "identity" : "sdcalertview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scottcwilliams511/SDCAlertView",
+      "state" : {
+        "revision" : "5e8051c34c7a7ed0d228aaf29fd302dbf5dbc812"
+      }
+    },
+    {
+      "identity" : "starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/daltoniam/Starscream",
+      "state" : {
+        "revision" : "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+        "version" : "4.0.4"
+      }
+    },
+  ],
+  "version" : 2
+}

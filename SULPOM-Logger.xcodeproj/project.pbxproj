@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA69AF28286A69D80014A37C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF27286A69D80014A37C /* AppDelegate.swift */; };
+		FA69AF2C286A69D80014A37C /* BleScanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF2B286A69D80014A37C /* BleScanVC.swift */; };
+		FA69AF2F286A69D80014A37C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA69AF2D286A69D80014A37C /* Main.storyboard */; };
+		FA69AF31286A69DE0014A37C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA69AF30286A69DE0014A37C /* Assets.xcassets */; };
+		FA69AF34286A69DE0014A37C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA69AF32286A69DE0014A37C /* LaunchScreen.storyboard */; };
+		FA69AF3D286A702B0014A37C /* PniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF3C286A702B0014A37C /* PniViewController.swift */; };
+		FA69AF40286A70550014A37C /* BytesUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF3F286A70550014A37C /* BytesUtility.swift */; };
+		FA69AF43286A705F0014A37C /* PniCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF41286A705F0014A37C /* PniCentralManager.swift */; };
+		FA69AF44286A705F0014A37C /* PniPeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF42286A705F0014A37C /* PniPeripheral.swift */; };
+		FA69AF46286A706C0014A37C /* TemporaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF45286A706C0014A37C /* TemporaryFile.swift */; };
+		FA69AF48286A70730014A37C /* DateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF47286A70730014A37C /* DateString.swift */; };
+		FA69AF4F286A708E0014A37C /* BinaryInteger_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF4B286A708E0014A37C /* BinaryInteger_ext.swift */; };
+		FA69AF50286A708E0014A37C /* Array_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF4C286A708E0014A37C /* Array_ext.swift */; };
+		FA69AF51286A708E0014A37C /* Float_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF4D286A708E0014A37C /* Float_ext.swift */; };
+		FA69AF55286A709E0014A37C /* UITableView_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF52286A709E0014A37C /* UITableView_ext.swift */; };
+		FA69AF56286A709E0014A37C /* Double_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF53286A709E0014A37C /* Double_ext.swift */; };
+		FA69AF5F286A70E30014A37C /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF5E286A70E30014A37C /* DeviceCell.swift */; };
+		FA69AF61286A70F30014A37C /* NeverClearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF60286A70F30014A37C /* NeverClearView.swift */; };
+		FA69AF67286A710C0014A37C /* PniButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF64286A710C0014A37C /* PniButton.swift */; };
+		FA69AF6B286A71A60014A37C /* BatteryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF6A286A71A60014A37C /* BatteryView.swift */; };
+		FA69AF6F286A71BF0014A37C /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF6D286A71BF0014A37C /* Devices.swift */; };
+		FA69AF70286A71BF0014A37C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF6E286A71BF0014A37C /* Device.swift */; };
+		FA69AF72286A71F70014A37C /* Firmware.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF71286A71F70014A37C /* Firmware.swift */; };
+		FA69AF74286A71FB0014A37C /* PniUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF73286A71FB0014A37C /* PniUUIDs.swift */; };
+		FA69B0BB286A72880014A37C /* LogServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0B4286A72880014A37C /* LogServiceDelegate.swift */; };
+		FA69B0BC286A72880014A37C /* LogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0B5286A72880014A37C /* LogService.swift */; };
+		FA69B0BE286A72890014A37C /* FactoryServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0B7286A72880014A37C /* FactoryServiceDelegate.swift */; };
+		FA69B0C0286A72890014A37C /* FactoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0B9286A72880014A37C /* FactoryService.swift */; };
+		FA69B0C4286A72A10014A37C /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0C3286A72A10014A37C /* AppSettings.swift */; };
+		FA69B0CA286A72CB0014A37C /* SensorLogItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0C8286A72CB0014A37C /* SensorLogItem.swift */; };
+		FA69B0CB286A72CB0014A37C /* SensorLogWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0C9286A72CB0014A37C /* SensorLogWriter.swift */; };
+		FA69B0CD286A72DD0014A37C /* PniLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0CC286A72DD0014A37C /* PniLogs.swift */; };
+		FA69B0CF286A72ED0014A37C /* Sizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0CE286A72ED0014A37C /* Sizes.swift */; };
+		FA69B0D1286A73840014A37C /* IPniService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0D0286A73840014A37C /* IPniService.swift */; };
+		FA69B0D5286A73A70014A37C /* OSLog_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0D4286A73A70014A37C /* OSLog_ext.swift */; };
+		FA69B0DB286A74F90014A37C /* PniNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0D8286A74F90014A37C /* PniNavigationController.swift */; };
+		FA69B0DC286A74F90014A37C /* PniTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0D9286A74F90014A37C /* PniTabBarController.swift */; };
+		FA69B0DD286A74F90014A37C /* PniTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0DA286A74F90014A37C /* PniTableViewController.swift */; };
+		FA69B0DF286CFDEA0014A37C /* ActivityIndicatorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0DE286CFDEA0014A37C /* ActivityIndicatorAlert.swift */; };
+		FA69B0E4286D03490014A37C /* ConnectedDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0E3286D03490014A37C /* ConnectedDevices.swift */; };
+		FA69B106286D124D0014A37C /* Fake_PniCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0E7286D124D0014A37C /* Fake_PniCentralManager.swift */; };
+		FA69B107286D124D0014A37C /* FakeAccelAutocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0E9286D124D0014A37C /* FakeAccelAutocal.swift */; };
+		FA69B108286D124D0014A37C /* FakeMagAutocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0EA286D124D0014A37C /* FakeMagAutocal.swift */; };
+		FA69B109286D124D0014A37C /* FakeAccelRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0EB286D124D0014A37C /* FakeAccelRaw.swift */; };
+		FA69B10B286D124D0014A37C /* FakeGyroBias.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0ED286D124D0014A37C /* FakeGyroBias.swift */; };
+		FA69B10C286D124D0014A37C /* FakeLinearAccel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0EE286D124D0014A37C /* FakeLinearAccel.swift */; };
+		FA69B10D286D124D0014A37C /* FakeGyroRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0EF286D124D0014A37C /* FakeGyroRaw.swift */; };
+		FA69B10F286D124D0014A37C /* FakeQuaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0F1286D124D0014A37C /* FakeQuaternion.swift */; };
+		FA69B112286D124D0014A37C /* FakeGyroAutocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0F4286D124D0014A37C /* FakeGyroAutocal.swift */; };
+		FA69B114286D124D0014A37C /* Fake_DevicePeripheral.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0F6286D124D0014A37C /* Fake_DevicePeripheral.swift */; };
+		FA69B118286D124D0014A37C /* FakeLogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0FB286D124D0014A37C /* FakeLogService.swift */; };
+		FA69B119286D124D0014A37C /* FakeFactoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0FC286D124D0014A37C /* FakeFactoryService.swift */; };
+		FA69B11B286D124D0014A37C /* Fake_CBCharacteristic.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69B0FF286D124D0014A37C /* Fake_CBCharacteristic.m */; };
+		FA69B11C286D124D0014A37C /* Fake_CBService.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69B102286D124D0014A37C /* Fake_CBService.m */; };
+		FA69B11D286D124D0014A37C /* Fake_CBPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = FA69B104286D124D0014A37C /* Fake_CBPeripheral.m */; };
+		FA69B123286E19FB0014A37C /* FakeMagRaw.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B122286E19FB0014A37C /* FakeMagRaw.swift */; };
+		FA69B125286E4F380014A37C /* SensorLogHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B124286E4F380014A37C /* SensorLogHeaders.swift */; };
+		FA69B127286E523B0014A37C /* SensorLogJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B126286E523B0014A37C /* SensorLogJson.swift */; };
+		FA69B129286E57720014A37C /* LoggingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B128286E57720014A37C /* LoggingTVC.swift */; };
+		FA69B12B286E5BB30014A37C /* LogRateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B12A286E5BB30014A37C /* LogRateTVC.swift */; };
+		FA69B12D286E5BB90014A37C /* EnabledLogsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B12C286E5BB90014A37C /* EnabledLogsTVC.swift */; };
+		FA69B12F286E5FA40014A37C /* SelectedLogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B12E286E5FA40014A37C /* SelectedLogCell.swift */; };
+		FA69B131286F4FAF0014A37C /* Data_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69B130286F4FAF0014A37C /* Data_ext.swift */; };
+		FAC17822286FA4DE001ACE32 /* SDCAlertView in Frameworks */ = {isa = PBXBuildFile; productRef = FAC17821286FA4DE001ACE32 /* SDCAlertView */; };
+		FAC1782328765303001ACE32 /* PniSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF62286A710C0014A37C /* PniSearchBar.swift */; };
+		FAC1782528774985001ACE32 /* NstStreamingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1782428774985001ACE32 /* NstStreamingTVC.swift */; };
+		FAC1782828774A84001ACE32 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = FAC1782728774A84001ACE32 /* Starscream */; };
+		FAC1782B28774AC4001ACE32 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FAC1782A28774AC4001ACE32 /* Alamofire */; };
+		FAC1782F28774D55001ACE32 /* PniTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC1782E28774D55001ACE32 /* PniTextField.swift */; };
+		FAC17831287758F6001ACE32 /* LoggingSettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC17830287758F6001ACE32 /* LoggingSettingsTVC.swift */; };
+		FACD5DA6288231970062850C /* NstFileUploadTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD5DA428822F540062850C /* NstFileUploadTVC.swift */; };
+		FACF51A12885B77500D04944 /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51A02885B77500D04944 /* UIHelpers.swift */; };
+		FACF51A32885B7D000D04944 /* UIViewController_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51A22885B7D000D04944 /* UIViewController_ext.swift */; };
+		FACF51A62885BABE00D04944 /* NstBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51A52885BABE00D04944 /* NstBase.swift */; };
+		FACF51A82885BAC300D04944 /* NstStreaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51A72885BAC300D04944 /* NstStreaming.swift */; };
+		FACF51AA2885BAC800D04944 /* NstFileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51A92885BAC800D04944 /* NstFileUploader.swift */; };
+		FACF51AC2885BBDB00D04944 /* ProgressAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF51AB2885BBDB00D04944 /* ProgressAlert.swift */; };
+		FACF51AE2885FC3300D04944 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FACF51AD2885FC3300D04944 /* Settings.bundle */; };
+		FACF51C328870F1800D04944 /* UIDevice_ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA69AF58286A70A60014A37C /* UIDevice_ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA69AF24286A69D80014A37C /* SULPOM-Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SULPOM-Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA69AF27286A69D80014A37C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA69AF2B286A69D80014A37C /* BleScanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BleScanVC.swift; sourceTree = "<group>"; };
+		FA69AF2E286A69D80014A37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA69AF30286A69DE0014A37C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA69AF33286A69DE0014A37C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA69AF35286A69DE0014A37C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA69AF3C286A702B0014A37C /* PniViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniViewController.swift; sourceTree = "<group>"; };
+		FA69AF3F286A70550014A37C /* BytesUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BytesUtility.swift; sourceTree = "<group>"; };
+		FA69AF41286A705F0014A37C /* PniCentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniCentralManager.swift; sourceTree = "<group>"; };
+		FA69AF42286A705F0014A37C /* PniPeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniPeripheral.swift; sourceTree = "<group>"; };
+		FA69AF45286A706C0014A37C /* TemporaryFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemporaryFile.swift; sourceTree = "<group>"; };
+		FA69AF47286A70730014A37C /* DateString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateString.swift; sourceTree = "<group>"; };
+		FA69AF4B286A708E0014A37C /* BinaryInteger_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinaryInteger_ext.swift; sourceTree = "<group>"; };
+		FA69AF4C286A708E0014A37C /* Array_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array_ext.swift; sourceTree = "<group>"; };
+		FA69AF4D286A708E0014A37C /* Float_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float_ext.swift; sourceTree = "<group>"; };
+		FA69AF52286A709E0014A37C /* UITableView_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView_ext.swift; sourceTree = "<group>"; };
+		FA69AF53286A709E0014A37C /* Double_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double_ext.swift; sourceTree = "<group>"; };
+		FA69AF58286A70A60014A37C /* UIDevice_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDevice_ext.swift; sourceTree = "<group>"; };
+		FA69AF5E286A70E30014A37C /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		FA69AF60286A70F30014A37C /* NeverClearView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeverClearView.swift; sourceTree = "<group>"; };
+		FA69AF62286A710C0014A37C /* PniSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniSearchBar.swift; sourceTree = "<group>"; };
+		FA69AF64286A710C0014A37C /* PniButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniButton.swift; sourceTree = "<group>"; };
+		FA69AF6A286A71A60014A37C /* BatteryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryView.swift; sourceTree = "<group>"; };
+		FA69AF6D286A71BF0014A37C /* Devices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		FA69AF6E286A71BF0014A37C /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		FA69AF71286A71F70014A37C /* Firmware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firmware.swift; sourceTree = "<group>"; };
+		FA69AF73286A71FB0014A37C /* PniUUIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniUUIDs.swift; sourceTree = "<group>"; };
+		FA69B0B4286A72880014A37C /* LogServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogServiceDelegate.swift; sourceTree = "<group>"; };
+		FA69B0B5286A72880014A37C /* LogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogService.swift; sourceTree = "<group>"; };
+		FA69B0B7286A72880014A37C /* FactoryServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryServiceDelegate.swift; sourceTree = "<group>"; };
+		FA69B0B9286A72880014A37C /* FactoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryService.swift; sourceTree = "<group>"; };
+		FA69B0C3286A72A10014A37C /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		FA69B0C8286A72CB0014A37C /* SensorLogItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorLogItem.swift; sourceTree = "<group>"; };
+		FA69B0C9286A72CB0014A37C /* SensorLogWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorLogWriter.swift; sourceTree = "<group>"; };
+		FA69B0CC286A72DD0014A37C /* PniLogs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniLogs.swift; sourceTree = "<group>"; };
+		FA69B0CE286A72ED0014A37C /* Sizes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sizes.swift; sourceTree = "<group>"; };
+		FA69B0D0286A73840014A37C /* IPniService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPniService.swift; sourceTree = "<group>"; };
+		FA69B0D4286A73A70014A37C /* OSLog_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLog_ext.swift; sourceTree = "<group>"; };
+		FA69B0D8286A74F90014A37C /* PniNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniNavigationController.swift; sourceTree = "<group>"; };
+		FA69B0D9286A74F90014A37C /* PniTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniTabBarController.swift; sourceTree = "<group>"; };
+		FA69B0DA286A74F90014A37C /* PniTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniTableViewController.swift; sourceTree = "<group>"; };
+		FA69B0DE286CFDEA0014A37C /* ActivityIndicatorAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorAlert.swift; sourceTree = "<group>"; };
+		FA69B0E3286D03490014A37C /* ConnectedDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectedDevices.swift; sourceTree = "<group>"; };
+		FA69B0E7286D124D0014A37C /* Fake_PniCentralManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fake_PniCentralManager.swift; sourceTree = "<group>"; };
+		FA69B0E9286D124D0014A37C /* FakeAccelAutocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAccelAutocal.swift; sourceTree = "<group>"; };
+		FA69B0EA286D124D0014A37C /* FakeMagAutocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMagAutocal.swift; sourceTree = "<group>"; };
+		FA69B0EB286D124D0014A37C /* FakeAccelRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeAccelRaw.swift; sourceTree = "<group>"; };
+		FA69B0ED286D124D0014A37C /* FakeGyroBias.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGyroBias.swift; sourceTree = "<group>"; };
+		FA69B0EE286D124D0014A37C /* FakeLinearAccel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeLinearAccel.swift; sourceTree = "<group>"; };
+		FA69B0EF286D124D0014A37C /* FakeGyroRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGyroRaw.swift; sourceTree = "<group>"; };
+		FA69B0F1286D124D0014A37C /* FakeQuaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeQuaternion.swift; sourceTree = "<group>"; };
+		FA69B0F4286D124D0014A37C /* FakeGyroAutocal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGyroAutocal.swift; sourceTree = "<group>"; };
+		FA69B0F5286D124D0014A37C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA69B0F6286D124D0014A37C /* Fake_DevicePeripheral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fake_DevicePeripheral.swift; sourceTree = "<group>"; };
+		FA69B0FB286D124D0014A37C /* FakeLogService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeLogService.swift; sourceTree = "<group>"; };
+		FA69B0FC286D124D0014A37C /* FakeFactoryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeFactoryService.swift; sourceTree = "<group>"; };
+		FA69B0FF286D124D0014A37C /* Fake_CBCharacteristic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fake_CBCharacteristic.m; sourceTree = "<group>"; };
+		FA69B100286D124D0014A37C /* Fake_CBService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fake_CBService.h; sourceTree = "<group>"; };
+		FA69B101286D124D0014A37C /* Fake_CBPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fake_CBPeripheral.h; sourceTree = "<group>"; };
+		FA69B102286D124D0014A37C /* Fake_CBService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fake_CBService.m; sourceTree = "<group>"; };
+		FA69B103286D124D0014A37C /* Fake_CBCharacteristic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fake_CBCharacteristic.h; sourceTree = "<group>"; };
+		FA69B104286D124D0014A37C /* Fake_CBPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fake_CBPeripheral.m; sourceTree = "<group>"; };
+		FA69B121286D15810014A37C /* Sulpom-Logger-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sulpom-Logger-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA69B122286E19FB0014A37C /* FakeMagRaw.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeMagRaw.swift; sourceTree = "<group>"; };
+		FA69B124286E4F380014A37C /* SensorLogHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogHeaders.swift; sourceTree = "<group>"; };
+		FA69B126286E523B0014A37C /* SensorLogJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorLogJson.swift; sourceTree = "<group>"; };
+		FA69B128286E57720014A37C /* LoggingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingTVC.swift; sourceTree = "<group>"; };
+		FA69B12A286E5BB30014A37C /* LogRateTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogRateTVC.swift; sourceTree = "<group>"; };
+		FA69B12C286E5BB90014A37C /* EnabledLogsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnabledLogsTVC.swift; sourceTree = "<group>"; };
+		FA69B12E286E5FA40014A37C /* SelectedLogCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedLogCell.swift; sourceTree = "<group>"; };
+		FA69B130286F4FAF0014A37C /* Data_ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data_ext.swift; sourceTree = "<group>"; };
+		FAC1782428774985001ACE32 /* NstStreamingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NstStreamingTVC.swift; sourceTree = "<group>"; };
+		FAC1782E28774D55001ACE32 /* PniTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PniTextField.swift; sourceTree = "<group>"; };
+		FAC17830287758F6001ACE32 /* LoggingSettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingSettingsTVC.swift; sourceTree = "<group>"; };
+		FACD5DA428822F540062850C /* NstFileUploadTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NstFileUploadTVC.swift; sourceTree = "<group>"; };
+		FACF51A02885B77500D04944 /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
+		FACF51A22885B7D000D04944 /* UIViewController_ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController_ext.swift; sourceTree = "<group>"; };
+		FACF51A52885BABE00D04944 /* NstBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NstBase.swift; sourceTree = "<group>"; };
+		FACF51A72885BAC300D04944 /* NstStreaming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NstStreaming.swift; sourceTree = "<group>"; };
+		FACF51A92885BAC800D04944 /* NstFileUploader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NstFileUploader.swift; sourceTree = "<group>"; };
+		FACF51AB2885BBDB00D04944 /* ProgressAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressAlert.swift; sourceTree = "<group>"; };
+		FACF51AD2885FC3300D04944 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA69AF21286A69D80014A37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC1782B28774AC4001ACE32 /* Alamofire in Frameworks */,
+				FAC17822286FA4DE001ACE32 /* SDCAlertView in Frameworks */,
+				FAC1782828774A84001ACE32 /* Starscream in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA69AF1B286A69D80014A37C = {
+			isa = PBXGroup;
+			children = (
+				FA69AF26286A69D80014A37C /* SULPOM-Logger */,
+				FA69AF25286A69D80014A37C /* Products */,
+				FAC17820286FA4DE001ACE32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA69AF25286A69D80014A37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF24286A69D80014A37C /* SULPOM-Logger.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA69AF26286A69D80014A37C /* SULPOM-Logger */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0E5286D124D0014A37C /* BleSimulator */,
+				FA69AF6C286A71B60014A37C /* Models */,
+				FA69AF3E286A70390014A37C /* Lib */,
+				FA69AF5C286A70C70014A37C /* Views */,
+				FA69AF3B286A6D870014A37C /* ViewControllers */,
+				FA69AF27286A69D80014A37C /* AppDelegate.swift */,
+				FA69AF2D286A69D80014A37C /* Main.storyboard */,
+				FA69AF30286A69DE0014A37C /* Assets.xcassets */,
+				FACF51AD2885FC3300D04944 /* Settings.bundle */,
+				FA69AF32286A69DE0014A37C /* LaunchScreen.storyboard */,
+				FA69AF35286A69DE0014A37C /* Info.plist */,
+				FA69B121286D15810014A37C /* Sulpom-Logger-Bridging-Header.h */,
+			);
+			path = "SULPOM-Logger";
+			sourceTree = "<group>";
+		};
+		FA69AF3B286A6D870014A37C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF3C286A702B0014A37C /* PniViewController.swift */,
+				FA69B0D8286A74F90014A37C /* PniNavigationController.swift */,
+				FA69B0D9286A74F90014A37C /* PniTabBarController.swift */,
+				FA69B0DA286A74F90014A37C /* PniTableViewController.swift */,
+				FA69AF2B286A69D80014A37C /* BleScanVC.swift */,
+				FA69B128286E57720014A37C /* LoggingTVC.swift */,
+				FA69B12A286E5BB30014A37C /* LogRateTVC.swift */,
+				FA69B12C286E5BB90014A37C /* EnabledLogsTVC.swift */,
+				FAC17830287758F6001ACE32 /* LoggingSettingsTVC.swift */,
+				FAC1782428774985001ACE32 /* NstStreamingTVC.swift */,
+				FACD5DA428822F540062850C /* NstFileUploadTVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA69AF3E286A70390014A37C /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF49286A707A0014A37C /* Extensions */,
+				FA69AF3F286A70550014A37C /* BytesUtility.swift */,
+				FA69AF41286A705F0014A37C /* PniCentralManager.swift */,
+				FA69AF42286A705F0014A37C /* PniPeripheral.swift */,
+				FA69B0D0286A73840014A37C /* IPniService.swift */,
+				FA69AF45286A706C0014A37C /* TemporaryFile.swift */,
+				FA69AF47286A70730014A37C /* DateString.swift */,
+				FACF51A02885B77500D04944 /* UIHelpers.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FA69AF49286A707A0014A37C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF4C286A708E0014A37C /* Array_ext.swift */,
+				FA69AF4B286A708E0014A37C /* BinaryInteger_ext.swift */,
+				FA69B130286F4FAF0014A37C /* Data_ext.swift */,
+				FA69AF4D286A708E0014A37C /* Float_ext.swift */,
+				FA69AF53286A709E0014A37C /* Double_ext.swift */,
+				FA69AF52286A709E0014A37C /* UITableView_ext.swift */,
+				FA69AF58286A70A60014A37C /* UIDevice_ext.swift */,
+				FA69B0D4286A73A70014A37C /* OSLog_ext.swift */,
+				FACF51A22885B7D000D04944 /* UIViewController_ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA69AF5C286A70C70014A37C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF5D286A70DB0014A37C /* Cells */,
+				FA69AF60286A70F30014A37C /* NeverClearView.swift */,
+				FA69AF64286A710C0014A37C /* PniButton.swift */,
+				FAC1782E28774D55001ACE32 /* PniTextField.swift */,
+				FA69AF62286A710C0014A37C /* PniSearchBar.swift */,
+				FA69B0DE286CFDEA0014A37C /* ActivityIndicatorAlert.swift */,
+				FACF51AB2885BBDB00D04944 /* ProgressAlert.swift */,
+				FA69AF6A286A71A60014A37C /* BatteryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA69AF5D286A70DB0014A37C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF5E286A70E30014A37C /* DeviceCell.swift */,
+				FA69B12E286E5FA40014A37C /* SelectedLogCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA69AF6C286A71B60014A37C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA69AF6E286A71BF0014A37C /* Device.swift */,
+				FA69AF6D286A71BF0014A37C /* Devices.swift */,
+				FA69AF71286A71F70014A37C /* Firmware.swift */,
+				FA69AF73286A71FB0014A37C /* PniUUIDs.swift */,
+				FA69B0B3286A72670014A37C /* BleServices */,
+				FA69B0C2286A728F0014A37C /* Settings */,
+				FA69B0C7286A72AB0014A37C /* Json */,
+				FA69B0CC286A72DD0014A37C /* PniLogs.swift */,
+				FA69B0CE286A72ED0014A37C /* Sizes.swift */,
+				FACF51A42885BAAF00D04944 /* Nstrumenta */,
+				FA69B0E3286D03490014A37C /* ConnectedDevices.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA69B0B3286A72670014A37C /* BleServices */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0B9286A72880014A37C /* FactoryService.swift */,
+				FA69B0B7286A72880014A37C /* FactoryServiceDelegate.swift */,
+				FA69B0B5286A72880014A37C /* LogService.swift */,
+				FA69B0B4286A72880014A37C /* LogServiceDelegate.swift */,
+			);
+			path = BleServices;
+			sourceTree = "<group>";
+		};
+		FA69B0C2286A728F0014A37C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0C3286A72A10014A37C /* AppSettings.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		FA69B0C7286A72AB0014A37C /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B124286E4F380014A37C /* SensorLogHeaders.swift */,
+				FA69B0C8286A72CB0014A37C /* SensorLogItem.swift */,
+				FA69B126286E523B0014A37C /* SensorLogJson.swift */,
+				FA69B0C9286A72CB0014A37C /* SensorLogWriter.swift */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		FA69B0E5286D124D0014A37C /* BleSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0F5286D124D0014A37C /* README.md */,
+				FA69B0FE286D124D0014A37C /* ObjectiveC */,
+				FA69B0E8286D124D0014A37C /* Datasets */,
+				FA69B0F7286D124D0014A37C /* Services */,
+				FA69B0E7286D124D0014A37C /* Fake_PniCentralManager.swift */,
+				FA69B0F6286D124D0014A37C /* Fake_DevicePeripheral.swift */,
+			);
+			path = BleSimulator;
+			sourceTree = "<group>";
+		};
+		FA69B0E8286D124D0014A37C /* Datasets */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0E9286D124D0014A37C /* FakeAccelAutocal.swift */,
+				FA69B0EB286D124D0014A37C /* FakeAccelRaw.swift */,
+				FA69B0F4286D124D0014A37C /* FakeGyroAutocal.swift */,
+				FA69B0ED286D124D0014A37C /* FakeGyroBias.swift */,
+				FA69B0EF286D124D0014A37C /* FakeGyroRaw.swift */,
+				FA69B0EE286D124D0014A37C /* FakeLinearAccel.swift */,
+				FA69B0EA286D124D0014A37C /* FakeMagAutocal.swift */,
+				FA69B122286E19FB0014A37C /* FakeMagRaw.swift */,
+				FA69B0F1286D124D0014A37C /* FakeQuaternion.swift */,
+			);
+			path = Datasets;
+			sourceTree = "<group>";
+		};
+		FA69B0F7286D124D0014A37C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0FB286D124D0014A37C /* FakeLogService.swift */,
+				FA69B0FC286D124D0014A37C /* FakeFactoryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA69B0FE286D124D0014A37C /* ObjectiveC */ = {
+			isa = PBXGroup;
+			children = (
+				FA69B0FF286D124D0014A37C /* Fake_CBCharacteristic.m */,
+				FA69B100286D124D0014A37C /* Fake_CBService.h */,
+				FA69B101286D124D0014A37C /* Fake_CBPeripheral.h */,
+				FA69B102286D124D0014A37C /* Fake_CBService.m */,
+				FA69B103286D124D0014A37C /* Fake_CBCharacteristic.h */,
+				FA69B104286D124D0014A37C /* Fake_CBPeripheral.m */,
+			);
+			path = ObjectiveC;
+			sourceTree = "<group>";
+		};
+		FAC17820286FA4DE001ACE32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FACF51A42885BAAF00D04944 /* Nstrumenta */ = {
+			isa = PBXGroup;
+			children = (
+				FACF51A52885BABE00D04944 /* NstBase.swift */,
+				FACF51A72885BAC300D04944 /* NstStreaming.swift */,
+				FACF51A92885BAC800D04944 /* NstFileUploader.swift */,
+			);
+			path = Nstrumenta;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA69AF23286A69D80014A37C /* SULPOM-Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA69AF38286A69DE0014A37C /* Build configuration list for PBXNativeTarget "SULPOM-Logger" */;
+			buildPhases = (
+				FA69AF20286A69D80014A37C /* Sources */,
+				FA69AF21286A69D80014A37C /* Frameworks */,
+				FA69AF22286A69D80014A37C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SULPOM-Logger";
+			packageProductDependencies = (
+				FAC17821286FA4DE001ACE32 /* SDCAlertView */,
+				FAC1782728774A84001ACE32 /* Starscream */,
+				FAC1782A28774AC4001ACE32 /* Alamofire */,
+			);
+			productName = "SULPOM-Logger";
+			productReference = FA69AF24286A69D80014A37C /* SULPOM-Logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA69AF1C286A69D80014A37C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FA69AF23286A69D80014A37C = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = FA69AF1F286A69D80014A37C /* Build configuration list for PBXProject "SULPOM-Logger" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA69AF1B286A69D80014A37C;
+			packageReferences = (
+				FA69B0E0286CFE9D0014A37C /* XCRemoteSwiftPackageReference "SDCAlertView" */,
+				FAC1782628774A84001ACE32 /* XCRemoteSwiftPackageReference "Starscream" */,
+				FAC1782928774AC4001ACE32 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = FA69AF25286A69D80014A37C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA69AF23286A69D80014A37C /* SULPOM-Logger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA69AF22286A69D80014A37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA69AF34286A69DE0014A37C /* LaunchScreen.storyboard in Resources */,
+				FA69AF31286A69DE0014A37C /* Assets.xcassets in Resources */,
+				FACF51AE2885FC3300D04944 /* Settings.bundle in Resources */,
+				FA69AF2F286A69D80014A37C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA69AF20286A69D80014A37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA69B114286D124D0014A37C /* Fake_DevicePeripheral.swift in Sources */,
+				FACF51A62885BABE00D04944 /* NstBase.swift in Sources */,
+				FA69B0C0286A72890014A37C /* FactoryService.swift in Sources */,
+				FACF51C328870F1800D04944 /* UIDevice_ext.swift in Sources */,
+				FA69AF48286A70730014A37C /* DateString.swift in Sources */,
+				FA69B0E4286D03490014A37C /* ConnectedDevices.swift in Sources */,
+				FA69B108286D124D0014A37C /* FakeMagAutocal.swift in Sources */,
+				FA69B12B286E5BB30014A37C /* LogRateTVC.swift in Sources */,
+				FA69AF40286A70550014A37C /* BytesUtility.swift in Sources */,
+				FA69B10F286D124D0014A37C /* FakeQuaternion.swift in Sources */,
+				FA69B107286D124D0014A37C /* FakeAccelAutocal.swift in Sources */,
+				FACF51A32885B7D000D04944 /* UIViewController_ext.swift in Sources */,
+				FACF51AC2885BBDB00D04944 /* ProgressAlert.swift in Sources */,
+				FA69AF44286A705F0014A37C /* PniPeripheral.swift in Sources */,
+				FA69B109286D124D0014A37C /* FakeAccelRaw.swift in Sources */,
+				FA69AF5F286A70E30014A37C /* DeviceCell.swift in Sources */,
+				FA69AF51286A708E0014A37C /* Float_ext.swift in Sources */,
+				FA69AF6F286A71BF0014A37C /* Devices.swift in Sources */,
+				FA69B0CA286A72CB0014A37C /* SensorLogItem.swift in Sources */,
+				FA69B127286E523B0014A37C /* SensorLogJson.swift in Sources */,
+				FA69B10B286D124D0014A37C /* FakeGyroBias.swift in Sources */,
+				FA69B0CD286A72DD0014A37C /* PniLogs.swift in Sources */,
+				FA69B131286F4FAF0014A37C /* Data_ext.swift in Sources */,
+				FA69B119286D124D0014A37C /* FakeFactoryService.swift in Sources */,
+				FA69B10D286D124D0014A37C /* FakeGyroRaw.swift in Sources */,
+				FAC1782F28774D55001ACE32 /* PniTextField.swift in Sources */,
+				FA69AF50286A708E0014A37C /* Array_ext.swift in Sources */,
+				FACD5DA6288231970062850C /* NstFileUploadTVC.swift in Sources */,
+				FA69AF72286A71F70014A37C /* Firmware.swift in Sources */,
+				FA69B0DF286CFDEA0014A37C /* ActivityIndicatorAlert.swift in Sources */,
+				FA69B0BC286A72880014A37C /* LogService.swift in Sources */,
+				FACF51AA2885BAC800D04944 /* NstFileUploader.swift in Sources */,
+				FA69B129286E57720014A37C /* LoggingTVC.swift in Sources */,
+				FA69B12D286E5BB90014A37C /* EnabledLogsTVC.swift in Sources */,
+				FA69B0DC286A74F90014A37C /* PniTabBarController.swift in Sources */,
+				FA69B0CB286A72CB0014A37C /* SensorLogWriter.swift in Sources */,
+				FA69B0C4286A72A10014A37C /* AppSettings.swift in Sources */,
+				FA69B112286D124D0014A37C /* FakeGyroAutocal.swift in Sources */,
+				FAC1782328765303001ACE32 /* PniSearchBar.swift in Sources */,
+				FA69B11B286D124D0014A37C /* Fake_CBCharacteristic.m in Sources */,
+				FA69AF2C286A69D80014A37C /* BleScanVC.swift in Sources */,
+				FACF51A82885BAC300D04944 /* NstStreaming.swift in Sources */,
+				FA69B11C286D124D0014A37C /* Fake_CBService.m in Sources */,
+				FA69B0DD286A74F90014A37C /* PniTableViewController.swift in Sources */,
+				FA69AF4F286A708E0014A37C /* BinaryInteger_ext.swift in Sources */,
+				FA69AF70286A71BF0014A37C /* Device.swift in Sources */,
+				FAC17831287758F6001ACE32 /* LoggingSettingsTVC.swift in Sources */,
+				FA69B125286E4F380014A37C /* SensorLogHeaders.swift in Sources */,
+				FA69AF28286A69D80014A37C /* AppDelegate.swift in Sources */,
+				FA69B123286E19FB0014A37C /* FakeMagRaw.swift in Sources */,
+				FA69AF61286A70F30014A37C /* NeverClearView.swift in Sources */,
+				FA69AF43286A705F0014A37C /* PniCentralManager.swift in Sources */,
+				FA69AF74286A71FB0014A37C /* PniUUIDs.swift in Sources */,
+				FAC1782528774985001ACE32 /* NstStreamingTVC.swift in Sources */,
+				FA69AF46286A706C0014A37C /* TemporaryFile.swift in Sources */,
+				FA69AF55286A709E0014A37C /* UITableView_ext.swift in Sources */,
+				FA69AF6B286A71A60014A37C /* BatteryView.swift in Sources */,
+				FA69AF56286A709E0014A37C /* Double_ext.swift in Sources */,
+				FA69B11D286D124D0014A37C /* Fake_CBPeripheral.m in Sources */,
+				FACF51A12885B77500D04944 /* UIHelpers.swift in Sources */,
+				FA69B12F286E5FA40014A37C /* SelectedLogCell.swift in Sources */,
+				FA69B0DB286A74F90014A37C /* PniNavigationController.swift in Sources */,
+				FA69B0D5286A73A70014A37C /* OSLog_ext.swift in Sources */,
+				FA69B0CF286A72ED0014A37C /* Sizes.swift in Sources */,
+				FA69B0BE286A72890014A37C /* FactoryServiceDelegate.swift in Sources */,
+				FA69B118286D124D0014A37C /* FakeLogService.swift in Sources */,
+				FA69AF67286A710C0014A37C /* PniButton.swift in Sources */,
+				FA69B10C286D124D0014A37C /* FakeLinearAccel.swift in Sources */,
+				FA69AF3D286A702B0014A37C /* PniViewController.swift in Sources */,
+				FA69B106286D124D0014A37C /* Fake_PniCentralManager.swift in Sources */,
+				FA69B0D1286A73840014A37C /* IPniService.swift in Sources */,
+				FA69B0BB286A72880014A37C /* LogServiceDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA69AF2D286A69D80014A37C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA69AF2E286A69D80014A37C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA69AF32286A69DE0014A37C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA69AF33286A69DE0014A37C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA69AF36286A69DE0014A37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				"GCC_PREPROCESSOR_DEFINITIONS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"IOS_SIMULATOR=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[sdk=iphonesimulator*]" = "DEBUG IOS_SIMULATOR";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA69AF37286A69DE0014A37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA69AF39286A69DE0014A37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 998CYQPLAM;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = (
+					"BleSimulator/*",
+					"BleSimulator/*/*",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SULPOM-Logger/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SULPOM-Logger";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required to communicate with SULPOM Sensor.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is required to communicate with SULPOM Sensor.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pnisensor.SULPOM-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA69AF3A286A69DE0014A37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 998CYQPLAM;
+				"EXCLUDED_SOURCE_FILE_NAMES[sdk=iphoneos*]" = (
+					"BleSimulator/*",
+					"BleSimulator/*/*",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SULPOM-Logger/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SULPOM-Logger";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is required to communicate with SULPOM Sensor.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is required to communicate with SULPOM Sensor.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pnisensor.SULPOM-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA69AF1F286A69D80014A37C /* Build configuration list for PBXProject "SULPOM-Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA69AF36286A69DE0014A37C /* Debug */,
+				FA69AF37286A69DE0014A37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA69AF38286A69DE0014A37C /* Build configuration list for PBXNativeTarget "SULPOM-Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA69AF39286A69DE0014A37C /* Debug */,
+				FA69AF3A286A69DE0014A37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA69B0E0286CFE9D0014A37C /* XCRemoteSwiftPackageReference "SDCAlertView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scottcwilliams511/SDCAlertView";
+			requirement = {
+				kind = revision;
+				revision = 5e8051c34c7a7ed0d228aaf29fd302dbf5dbc812;
+			};
+		};
+		FAC1782628774A84001ACE32 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+		FAC1782928774AC4001ACE32 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = exactVersion;
+				version = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FAC17821286FA4DE001ACE32 /* SDCAlertView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA69B0E0286CFE9D0014A37C /* XCRemoteSwiftPackageReference "SDCAlertView" */;
+			productName = SDCAlertView;
+		};
+		FAC1782728774A84001ACE32 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC1782628774A84001ACE32 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		FAC1782A28774AC4001ACE32 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAC1782928774AC4001ACE32 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA69AF1C286A69D80014A37C /* Project object */;
+}
